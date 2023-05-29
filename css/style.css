@@ -1,0 +1,627 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+
+:root {
+    --yellow: #ffcf3f;
+    --black: #111;
+    --white: #cccccd;
+    --light-color: #666;
+    --light-bg: #eee;
+    --hover: #088179;
+    --box-shadow: 0 .5rem 1rem rgba(0,0,0,1);
+    --border: .1rem solid rgba(0,0,0,.3);
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; 
+    border: none;
+    text-decoration: none;
+    transition: all .3s  ease;
+}
+
+
+/* html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+} */
+
+body {
+    width: 100%;
+}
+::-webkit-scrollbar {
+    width: 1rem;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--yellow);
+}
+
+
+
+
+
+/* header starts here  */
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background-color: var(--white);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 1000;
+    top: 0; left: 0;
+    position: sticky;
+}
+
+#header img {
+    width: 15%;
+    object-fit: cover;
+}
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #1a1a1a;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    color: var(--hover);
+}
+
+#navbar li a.active::after {
+    content: "";
+    width: 40%;
+    height: 2px;
+    background-color: var(--hover);
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: "";
+    width: 40%;
+    height: 2px;
+    background-color: var(--hover);
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+/* header ends here  */
+
+/* Home page starts here  */
+
+#hero {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background-image: url("/img/young-japanese-woman-portrait-copy-space.jpg");
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% right 0;
+    padding: 0 80px;
+}
+
+#hero h4 {
+    color: var(--black);
+    padding-bottom: .6rem;
+    font-size: 3rem;
+}
+ #hero h2 {
+    color: var(--black);
+    font-size: 4rem;
+ }
+
+#hero h1 {
+    color: var(--hover);
+    font-size: 4rem;
+}
+
+#hero button {
+    color: var(--black);
+    background-color: var(--yellow);
+    padding: 1rem 7.5rem;
+    font-size: 2rem;
+    border-radius: 4rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+#hero button:hover {
+    color: var(--yellow);
+    background-color: var(--black);
+}
+
+#hero p {
+    font-size: 1.3rem;
+    color: var(--black);
+    margin-bottom: 5px;
+    margin-top: 1rem;
+}
+/* Home page ends here  */
+
+/* feature section begins here  */
+
+.section-p1 {
+    padding: 4rem 9rem;
+}
+
+#feature {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#feature .fe-box {
+    width: 180px;
+    text-align: center;
+    padding: 18px 15px;
+    box-shadow: 20px 20px 354px rgba(0, 0, 0, 0.03);
+    border: 1px solid var(--white);
+    border-radius: 8px;
+    margin: 15px 0;
+    cursor: pointer;
+}
+
+#feature .fe-box:hover {
+    box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.1);
+}
+
+
+#feature  .fe-box img {
+width: 100%;
+margin-bottom: 10px;
+object-fit: contain;
+}
+
+#feature .fe-box>h6 {
+    font-size: 1rem;
+}
+
+#feature .fe-box>h6 {
+    display: inline-block;
+    padding: 9px 8px 6px 8px;
+    border-radius: 6px;
+    line-height: 1;
+    color: #088178;
+    background-color:#fddde4;
+}
+
+#feature .fe-box:nth-child(2)>h6 {
+    background-color: #cdebbc;
+}
+
+#feature .fe-box:nth-child(3)>h6 {
+    background-color: #d1e8f2;
+}
+#feature .fe-box:nth-child(4)>h6 {
+    background-color: #cdd4f8;
+}
+
+#feature .fe-box:nth-child(5)>h6 {
+    background-color: #f6dbf6;
+}
+
+#feature .fe-box:nth-child(6)>h6 {
+    background-color: #fff2e5;
+}
+
+/* feature section ends here  */
+
+/* feature products starts here  */
+
+#product1 {
+    text-align: center;
+}
+
+#product1 h2 {
+    font-size: 4rem;
+}
+
+#product1 p {
+    font-size: 1.5rem;
+}
+
+#product1 .pro {
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #cce7d0;
+    border-radius: 25px;
+    cursor: pointer;
+    position: relative;
+    margin: 15px 0;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    transition: 0.2s ease;
+}
+
+#product .pro:hover {
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+}
+
+#product1 .pro img {
+    width: 100%;
+    border-radius: 20px;
+    object-fit: contain;
+}
+
+#product1 .pro .des {
+    text-align: start;
+    border-radius: 10px 0;
+}
+
+#product1 .pro .des span {
+    color: #606063;
+    font-size: 16px;
+}
+
+#product1 .pro .des h5 {
+    padding-top: 7px;
+    color: #1a1a1a;
+    font-size: 14px;
+}
+
+#product1 .pro .des i {
+    font-size: 20px;
+    color: var(--yellow);
+}
+
+#product1 .pro .des h4 {
+    padding-top: 7px;
+    font-size: 15px;
+    color: var(--hover);
+    font-weight: 700;
+}
+
+#product1 .pro .cart {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: #e8f6ea;
+    color: var(--hover);
+    border-color: 1px solid #cce7d0;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+#product1 .pro-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+/* feature products ends here  */
+
+/* banner section begins here  */
+
+#banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("/img/colored\ phone.gif");
+    z-index: 1000;
+    height: 40vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    
+}
+#banner .section-m1 {
+    margin: 40px 0;
+}
+
+#banner h4 {
+    color: var(--light-bg);
+    font-size: 2.5rem;
+}
+#banner h2 {
+    font-size: 3.5rem;
+    color: var(--light-bg);
+    padding: 10px 0;
+}
+
+#banner h2 span {
+    color: var(--yellow);
+}
+
+#banner button {
+    font-size: 1.5rem;
+    color: var(--black);
+    background-color: var(--yellow);
+    padding: 1rem 3rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+#banner button:hover {
+    color: var(--yellow);
+    background-color: var(--black);
+}
+
+/* banner section ends here  */
+
+/* product2 section starts here  */
+
+#product1 #product1-p {
+    font-size: 1.2rem;
+}
+
+#product1 #product1-h2 {
+    font-size: 4.5rem;
+}
+
+/* product2 section ends here  */
+
+/* sm-banner section starts here   */
+#sm-banner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+#sm-banner .banner-box {
+    display: flex;
+    border-radius: 0.3rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    background-image: url("/img/Clothing/Women/Colored\ T-shirts.jpeg");
+    min-width: 50%;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 2rem;
+}
+
+#sm-banner .banner-box #b2g1f {
+    font-size: 2.1rem;
+}
+
+#sm-banner h4 {
+    font-size: 2rem;
+    font-weight: 300;
+    color: var(--light-bg);
+}
+
+#sm-banner h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--light-bg);
+}
+
+#sm-banner span {
+    font-size: 1.1rem;
+    color: var(--light-bg);
+    padding-bottom: .5rem;
+}
+
+#sm-banner button {
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: transparent;
+    border: .15rem solid var(--light-bg);
+    padding: .8rem 2rem;
+    border-radius: .3rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+#sm-banner #learn-btn:hover {
+    color: var(--light-bg);
+    background-color: var(--hover);
+}
+#sm-banner .banner-box2 {
+    background-image: url("/img/Clothing/Women/Designer\ T-shirts.jpeg");
+}
+
+#sm-banner .banner-box2 h4 {
+    font-size: 2rem;
+    font-weight: 300;
+    color: var(--black);
+}
+
+#sm-banner .banner-box2 h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--black);
+}
+
+#sm-banner .banner-box2 span {
+    font-size: 1.1rem;
+    color: var(--black);
+    padding-bottom: .5rem;
+}
+
+#sm-banner .banner-box2 button {
+    font-size: 1.2rem;
+    color: var(--light-bg);
+    background-color: transparent;
+    border: .15rem solid var(--light-bg);
+    padding: .8rem 2rem;
+    border-radius: .3rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+#sm-banner #collection-btn:hover {
+    color: var(--light-bg);
+    background-color: var(--hover);
+}
+
+/* sm-banner section ends here   */
+
+/* banner3 section starts here  */
+
+#banner3 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 65px;
+    margin: 0 80px;
+}
+
+#banner3 .banner-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url("/img/young-stylish-sexy-woman-cinema-backstage.jpg");
+    min-width: 30%;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 3.5px;
+    cursor: pointer;
+}
+
+#banner3 h2 {
+    color: var(--light-bg);
+    font-weight: 900;
+    font-size: 22px;
+}
+
+#banner3 h3 {
+    color: #ea3b35;
+    font-weight: 800;
+    font-size: 16px;
+}
+
+#banner3 .banner-box2 {
+    background-image: url("/img/Clothing/Women/african-gender-fluid-person-posing-green-shirt.jpg");
+}
+
+#banner3 .banner-box3 {
+    background-image: url("/img/Clothing/Women/T-shirts.jpg");
+}
+/* banner3 section ends here  */
+
+/* news-letter section begins here */
+
+#news-letter {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    position: relative;
+    margin-bottom: 20px;
+    /* background-image: url("/img/Fly\ Fishing.gif"); */
+    background-repeat: no-repeat;
+    background-position: 10% 30%;
+    background-color: #222268;
+}
+
+#news-letter h4 {
+    font-size: 22px;
+    font-weight: 900;
+    color: var(--light-bg);
+    padding-bottom: 16px;
+}
+
+#news-letter p {
+    font-size: 18px;
+    color: rgb(229, 215, 215);
+}
+
+#news-letter span {
+    font-size: 18px;
+    color: var(--yellow);
+}
+
+#news-letter.form {
+    display: flex;
+    width: 80%;
+}
+#news-letter input {
+    height: 3.538rem;
+    padding: 0 1.25em;
+    font-size: 16px;
+    width: 20%;
+    position: absolute;
+    left: 63.5%;
+    border: 1px solid transparent;
+    border-radius: .2rem;
+    outline: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#news-letter button {
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: var(--hover);
+    white-space: nowrap;
+    padding: .88rem 2rem;
+    border-radius: .2rem;
+    cursor: pointer;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+/* news-letter section ends here */
+
+/* footer section starts here  */
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+footer .col .row img {
+    width: 120px;
+    height: 160px;
+    object-fit: contain;
+}
+
+footer .col img {
+    width: 200px;
+    height: 160px;
+    object-fit: contain;
+}
+
+/* footer section ends here  */
