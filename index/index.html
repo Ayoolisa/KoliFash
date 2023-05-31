@@ -17,7 +17,7 @@
 </head>
 <body>
     <section id="header">
-        <a href=""><img src="/img/logo.png" alt="KoliFash logo"></a>
+        <a href="#"><img src="/img/logo.png" alt="KoliFash logo" id="logo"></a>
 
         <div>
             <ul id="navbar">
@@ -26,8 +26,13 @@
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="cart.html"><i class="fa fa-bag-shopping"></i></a></li>
+                <li id="lg-bag"><a href="cart.html"><i class="fa fa-bag-shopping"></i></a></li>
+                <a href="#" id="close"><i class="fas fa-times"></i></a>
             </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="fa fa-bag-shopping"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
         </div>
     </section>
 
@@ -67,7 +72,7 @@
 
         <div class="fe-box">
             <img src="/img/online shopping.jpg" alt="free-shipping">
-            <h6>F24/7Support</h6>
+            <h6>24/7Support</h6>
         </div>
     </section>
 
@@ -384,19 +389,19 @@
 <section id="banner3">
     <div class="banner-box">
         
-        <a href=""><h2>SEASONAL SALE</h2></a>
+        <a href="#"><h2>SEASONAL SALE</h2></a>
         <h3>Winter Collection - 50% OFF</h3>
     </div>
 
     <div class="banner-box banner-box2">
         
-        <a href=""><h2>NEW FOOTWEAR COLLECTION</h2></a>
+        <a href="#"><h2>NEW COLLECTION</h2></a>
         <h3>Winter Collection - 50% OFF</h3>
     </div>
 
     <div class="banner-box banner-box3">
         
-        <a href=""><h2>T-SHIRTS</h2></a>
+        <a href="#"><h2 id="t-shirt">T-SHIRTS</h2></a>
         <h3>Winter Collection - 50% OFF</h3>
     </div>
 </section>
@@ -408,14 +413,13 @@
     </div>
 
     <div class="form">
-        <input type="text" class="" placeholder="Your email address">
+        <input type="text" class="input-field" placeholder="Your email address">
         <button>Sign Up</button>
     </div>
 </section>
 
-<footer class="section-p1">
+<footer class="section-p1" id="footer-sect">
     <div class="col">
-        <img src="/img/logo.png " alt="">
         <h4>Contact</h4>
         <p><strong>Address: </strong> 562 Wellington Road, Street 32, Victoria Island</p>
         <p><strong>Phone: </strong> +234 222 333 000 /(+91) 01 2346 6008</p>
@@ -451,7 +455,7 @@
     </div>
 
     <div class="col install">
-        <h4>Install App</h4>
+        <h4 id="install-app">Install App</h4>
         <p>From App Store or Google Play</p>
 
         <div class="row">
@@ -459,9 +463,10 @@
             <img src="/img/pay/google playstore.png" alt="">
         </div>
 
-        <p>Secured Payment Gateways</p>
-        <img src="/img/pay/all cards.png" alt="">
+        <p id="secured-payment">Secured Payment Gateways</p>
+        <img src="/img/pay/all cards.png" alt="all cards" id="all-cards">
     </div>
+
 
     <div class="copyright">
         <p>&copy; 2023 | Ayocoder</p>
@@ -471,4 +476,4 @@
 
 <script src="/js/script.js"></script>
 </body>
-</html>
+</html>     
